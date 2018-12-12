@@ -76,5 +76,4 @@ typings/
 .fusebox/
 .temp
 .vscode
-public
-node_modules
+public/
