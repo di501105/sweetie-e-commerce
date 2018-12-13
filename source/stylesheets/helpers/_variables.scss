@@ -144,13 +144,13 @@ $spacers: map-merge(
     // 3: $spacer,
     // 4: ($spacer * 1.5),
     // 5: ($spacer * 3)
-    1: 5px,
+    1: 10px,
     2: 15px,
     3: 20px,
     4: 25px,
     5: 30px,
     6: 40px,
-    7: 70px,
+    7: 60px,
     8: 80px,
     9: 105px
   ),
@@ -176,7 +176,7 @@ $sizes: map-merge(
 // Settings for the `<body>` element.
 
 $body-bg:                   $white !default;
-$body-color:                $gray-900 !default;
+$body-color:                $primary; //$gray-900 !default;
 
 // Links
 //

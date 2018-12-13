@@ -2,8 +2,11 @@
 @import "helpers/variables";
 @import "bootstrap";
 
-
+@import "components/header";
 @import "components/form-square";
+@import "components/section";
+@import "components/product-card";
 
 
-@import "components/utilities"
+@import "components/utilities";
+@import "components/bs4-custom";
