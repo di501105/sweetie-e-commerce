@@ -4,8 +4,11 @@
   .header-main-image {
     height: $main-height;
   }
-
-
+  .header-image-slogan {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
 
   //rectangle box
   $rectangle-image-height: 256px;
