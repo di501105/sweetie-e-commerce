@@ -30,4 +30,10 @@
   .product-name {
     border-right: 1px solid $primary-200;
   }
+
+  .product-favorite {
+    position: absolute;
+    top: 20px;
+    right: 22px;
+  }
 }

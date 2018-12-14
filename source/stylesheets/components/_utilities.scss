@@ -4,8 +4,8 @@
   background-position: center center;
 }
 
-//copy right
-.copy-right {
+//copyright
+.copyright {
   @include media-breakpoint-down(xs) {
     font-size: $font-size-sm;
   }
