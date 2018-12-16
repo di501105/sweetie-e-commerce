@@ -15,3 +15,7 @@
     color: theme-color('primary');
   }
 }
+
+.btn-social-light {
+  @include button-variant($white, $primary-200);
+}
