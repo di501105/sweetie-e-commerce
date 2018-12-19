@@ -40,9 +40,15 @@
 }
 
 
-.bg-primary-light {
+.bg-primary-200 {
   background-color: $primary-200;
 }
-.text-primary-light {
+.text-primary-100 {
   color: $primary-100 !important;
+}
+.text-primary-200 {
+  color: $primary-200 !important;
+}
+.border-primary-200 {
+  border-color: $primary-200 !important;
 }

@@ -2,6 +2,10 @@
   border: none;
 }
 
+.btn-xl {
+  @include button-size($btn-padding-y-lg, $btn-padding-x-lg, $font-size-xl, $btn-line-height-lg, $btn-border-radius-lg);
+}
+
 .btn-primary-lighter {
   @include button-variant($primary-200, $primary-200,);
   color: theme-color('primary');
@@ -16,6 +20,23 @@
   }
 }
 
-.btn-social-light {
+.btn-icon-light {
   @include button-variant($white, $primary-200);
+}
+
+.nav.nav-dark {
+  &.nav-pills > .nav-link {
+    border: 1px solid $primary-200;
+  }
+  .nav-link {
+    color: $primary-200;
+  }
+  .nav-link:hover {
+    background-color: $primary-100;
+    color: theme-color('primary');
+  }
+  .nav-link.active {
+    background-color: $primary-200;
+    color: theme-color('primary');
+  }
 }

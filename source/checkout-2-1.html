@@ -1,0 +1,129 @@
+---
+title: 結帳頁
+layout: ./source/layout.ejs
+engine: ejs
+current: checkout-2-1
+---
+
+
+
+<section class="container">
+  <div class="row justify-content-center">
+    <div class="col-lg-10 p-0 px-lg-1">
+      <div class="row">
+        <div class="col-lg-7 pb-0 pb-md-7">
+          <div class="bg-primary text-primary-200 py-5 px-6">
+            <div class="form-row mb-5">
+              <div class="col-6">
+                <h1 class="m-0">發票</h1>
+              </div>
+              <div class="col-6 d-flex align-items-center">
+                <div class="process-step w-100">
+                  <div class="step-circle material-icons completed">done</div>
+                  <div class="step-circle material-icons completed">done</div>
+                  <div class="step-circle material-icons active"></div>
+                </div>
+              </div>
+            </div>
+
+            <nav class="nav nav-dark nav-pills nav-fill mb-2">
+              <a href="checkout-2.html" class="nav-item nav-link h4 font-weight-bold">電子發票</a>
+              <a href="checkout-2-1.html" class="nav-item nav-link h4 font-weight-bold active">郵寄發票</a>
+            </nav>
+            
+            <div class="d-flex justify-content-between align-items-center">
+              <label class="h4" for="city">地址</label>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="same_address">
+                <label class="custom-control-label text-white" for="same_address">同運送地址</label>
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="col-6">
+                <div class="form-group">
+                  <select id="city" class="form-control form-control-lg bg-primary-200 text-primary">
+                    <option value="台北市">台北市</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-group">
+                  <select id="region" class="form-control form-control-lg bg-primary-200 text-primary">
+                    <option value="中正區">中正區</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control form-control-lg bg-primary-200" placeholder="幸福路 520 號">
+            </div>
+            <div class="form-group">
+              <label class="h4" for="tax_ID_number">統一編號（選填）</label>
+              <div class="input-group input-group-lg">
+                <input type="text" class="form-control form-control-lg bg-primary-200 border-right-0" id="tax_ID_number" placeholder="12345678">
+              </div>
+            </div>
+          </div>
+          <a href="success.html" class="btn btn-minor btn-block btn-xl text-primary font-weight-bold py-3">確認結帳</a>
+        </div>
+
+        <div class="col-lg-5 d-none d-lg-block">
+          <div class="card border-primary-200 mb-3">
+            <h2 class="h4 card-header bg-primary-200 border-primary-200 text-primary-100 text-center font-weight-bold">訂單摘要</h2>
+            <div class="card-body text-primary-100">
+              <div class="d-flex justify-content-between mb-1">
+                <span>小計</span>
+                <span>NT$ 2,700</span>
+              </div>
+              <div class="d-flex justify-content-between mb-2">
+                <span>運費</span>
+                <span>NT$ 300</span>
+              </div>
+              <div class="d-flex justify-content-between">
+                <span class="h5 font-weight-bold">總計</span>
+                <span class="h5 font-weight-bold">NT$ 3,000</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card border-primary-200">
+            <h2 class="h4 card-header bg-primary-200 border-primary-200 text-primary-100 text-center font-weight-bold">購物清單</h2>
+            <div class="card-body cart">
+              <div class="d-flex">
+                <div class="cart-image cart-image-sm mr-3" style="background-image: url(https://images.unsplash.com/photo-1504855328839-2f4baf9e0fd7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=db0c8e5539456faeca0e49c79e2ccb16&auto=format&fit=crop&w=800&q=60)"></div>
+                <div class="d-flex align-items-center">
+                  <div class="flex-fill text-primary-100">
+                    <span>抹茶馬卡龍 (2)</span><br>
+                    <span class="h5 font-weight-bold">NT$ 900</span>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex mt-2">
+                <div class="cart-image cart-image-sm mr-3" style="background-image: url(https://images.unsplash.com/photo-1525203135335-74d272fc8d9c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=61b27d2cefd0dd094b5439f897b43bb7&auto=format&fit=crop&w=700&q=60)"></div>
+                <div class="d-flex align-items-center">
+                  <div class="flex-fill text-primary-100">
+                    <span>抹茶馬卡龍 (2)</span><br>
+                    <span class="h5 font-weight-bold">NT$ 900</span>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex mt-2">
+                <div class="cart-image cart-image-sm mr-3" style="background-image: url(https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5d2452cace2ee90c9781c7a39c9a30cf&auto=format&fit=crop&w=800&q=60)"></div>
+                <div class="d-flex align-items-center">
+                  <div class="flex-fill text-primary-100">
+                    <span>抹茶馬卡龍 (2)</span><br>
+                    <span class="h5 font-weight-bold">NT$ 900</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+</section>
