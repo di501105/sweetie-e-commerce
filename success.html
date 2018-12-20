@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Sweetaste 甜點 - <%- title %></title>
+  <title>Sweetaste 甜點 - 付款成功</title>
   <meta name="description" content="Sweetaste 甜點，最好吃的甜點，吃了不會拉肚子。" />
 
-  <meta property="og:title" content="Sweetaste 甜點 - <%- title %>" />
+  <meta property="og:title" content="Sweetaste 甜點 - 付款成功" />
   <meta property="og:description" content="Sweetaste 甜點，最好吃的甜點，吃了不會拉肚子。" />
   <meta property="og:site_name" content="Sweetaste 甜點" />
   <meta property="og:locale" content="zh_TW" />
@@ -34,13 +34,13 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item <% if (current === 'index') { %> active <% } %>">
+          <li class="nav-item ">
             <a class="nav-link font-weight-bold" href="index.html">首頁 <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item <% if (current === 'products') { %> active <% } %>">
+          <li class="nav-item ">
             <a class="nav-link font-weight-bold" href="products.html">甜點</a>
           </li>
-          <li class="nav-item <% if (current === 'login') { %> active <% } %>">
+          <li class="nav-item ">
             <a class="nav-link font-weight-bold" href="login.html">登入</a>
           </li>
         </ul>
@@ -48,7 +48,35 @@
     </div>
   </nav>
 
-    <%- contents %>
+    
+
+
+<div class="container mb-md-7 p-0 px-md-1">
+  <header class="header">
+    <div class="header-main-image bg-cover row justify-content-center align-items-center" style="background-image: url(https://images.unsplash.com/photo-1505935428862-770b6f24f629?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2c5a2cf31c693f5c15fb08135bf1adf2&auto=format&fit=crop&w=800&q=60)">
+      <div class="col-md-4">
+        <div class="row justify-content-center">
+          <div class="col-5 col-md-10 col-lg-8">
+            <div class="process-step process-step-dark mb-5">
+              <div class="step-circle material-icons completed">done</div>
+              <div class="step-circle material-icons completed">done</div>
+              <div class="step-circle material-icons completed">done</div>
+            </div>
+          </div>
+        </div>
+        
+
+        <h1 class="text-hide text-center mb-50">
+          付款成功
+          <img src="images/lg-付款成功.svg" width="190" alt="">
+        </h1>
+
+        <a href="products.html" class="btn btn-minor btn-block btn-xl text-primary font-weight-bold py-2 d-none d-md-block">繼續逛逛</a>
+      </div>
+    </div>
+  </header>
+</div>
+<a href="products.html" class="btn btn-minor btn-block btn-xl text-primary font-weight-bold py-3 d-md-none">繼續逛逛</a>
 
   <section class="bg-primary py-5">
     <div class="container">
