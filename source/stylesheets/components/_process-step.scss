@@ -41,4 +41,25 @@
     background-color: $primary-200;
     color: theme-color('primary');
   }
+
+
+  &.process-step-dark {
+    border-color: theme-color('primary');
+    &:after {
+      background-color: theme-color('primary');
+    }
+    .step-circle {
+      background-color: theme-color('primary');
+    }
+    .step-circle.active {
+      background-color: theme-color('primary');
+      &:after {
+        background-color: theme-color('primary');
+      }
+    }
+    .step-circle.completed {
+      background-color: theme-color('primary');
+      color: $primary-200;
+    }
+  }
 }
